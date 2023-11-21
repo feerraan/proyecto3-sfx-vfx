@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Spool_02
       objectReference: {fileID: 0}
+    - target: {fileID: 114304, guid: 3daef342e8f3f9548b04424eac7d4d0d, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 496864, guid: 3daef342e8f3f9548b04424eac7d4d0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -146,6 +150,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3311292161188598845, guid: 4f5777bf29c3f4bf9ba7600a249f2d2e, type: 3}
+    - {fileID: 5539571659874436656, guid: 4f5777bf29c3f4bf9ba7600a249f2d2e, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2358080539220578711, guid: 4f5777bf29c3f4bf9ba7600a249f2d2e, type: 3}
       insertIndex: -1
