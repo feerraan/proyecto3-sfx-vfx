@@ -409,6 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  leftBound: -6
 --- !u!65 &835818923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -459,6 +460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846a03ba44cdc4d66a937915f8d02325, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGameOver: 0
 --- !u!1 &2014335011
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,7 +595,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43eb4114aa56144cd86c7fd541f746b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 27620602954853229, guid: 4f5777bf29c3f4bf9ba7600a249f2d2e, type: 3}
+  obstaclesArray:
+  - {fileID: 27620602954853229, guid: 4f5777bf29c3f4bf9ba7600a249f2d2e, type: 3}
+  - {fileID: 5575933683092308581, guid: 25b6c0734dd9f47b6b322963b44d51cf, type: 3}
+  - {fileID: 5575933683092308581, guid: eda84b3daa99b4ccbbe31c847a89820b, type: 3}
+  - {fileID: 5575933683092308581, guid: f86078142c01a4904be2254594768bad, type: 3}
+  - {fileID: 5575933683092308581, guid: cfd0e424f3310468eb1c3d59f91dbd74, type: 3}
+  - {fileID: 5575933683092308581, guid: 5b0126200aea844f686bc566897ad574, type: 3}
+  - {fileID: 5575933683092308581, guid: 797e405ae6b7543319d8dff2484d5f7e, type: 3}
 --- !u!4 &2147232992
 Transform:
   m_ObjectHideFlags: 0
