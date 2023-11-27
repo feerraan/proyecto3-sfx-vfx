@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
 
     private Animator playerAnimator;
     [SerializeField]private ParticleSystem deathParticleSystem;
+    [SerializeField]private ParticleSystem dirtParticleSystem;
 
     private void Awake()
     {
@@ -36,6 +37,8 @@ public class PlayerController : MonoBehaviour
         {
             Jump();
         }
+
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -72,9 +75,9 @@ public class PlayerController : MonoBehaviour
 
         //Sistema de Particulas
         deathParticleSystem.Play();
-        
-    }
 
+    }
+    
    
 }
 
