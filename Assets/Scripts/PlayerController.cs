@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public bool isGameOver;
 
     private Animator playerAnimator;
+    [SerializeField]private ParticleSystem deathParticleSystem;
 
     private void Awake()
     {
@@ -67,6 +69,9 @@ public class PlayerController : MonoBehaviour
         int randomDeath =  Random.Range(1, 3);
         playerAnimator.SetBool(DEATH_BOOL, true);
         playerAnimator.SetInteger(DEATH_TYPE_INT, randomDeath);
+
+        //Sistema de Particulas
+        deathParticleSystem.Play();
         
     }
 
