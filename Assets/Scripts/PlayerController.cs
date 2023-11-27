@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -36,8 +38,7 @@ public class PlayerController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Obstacle")) // Hemos colisionado con un obstáculo
         {
-            Debug.Log("GAME OVER");
-            isGameOver = true;
+            GameOver();
         }
     }
 
@@ -50,4 +51,18 @@ public class PlayerController : MonoBehaviour
         //Animacion de Salto
         playerAnimator.SetTrigger("Jump_trig");
     }
+
+    private void GameOver()
+    {
+        Debug.Log("GAME OVER");
+        isGameOver = true;
+
+        int randomDeath =  Random.Range(1, 3);
+        playerAnimator.SetBool("Death_b", true);
+        playerAnimator.SetInteger("DeathType_int", randomDeath);
+        
+    }
+
+   
 }
+
